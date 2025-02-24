@@ -5,9 +5,9 @@ import img from '../assets/img.png'
 const Artwork = () => {
     return (
         <div id='Artwork' className='border min-h-screen flex flex-col lg:flex-row justify-center items-center lg:px-32 px-5'>
-            <img src={img} alt="img" className='lg:w-10/12'/>
+            {/* <img src={img} alt="img" className='lg:w-10/12'/> */}
             <div className='space-y-4 lg:pt-14 ml-6 text-sm'>
-                <h1 className='font-semibold text-4xl text-center md:text-start'>Artwork Us</h1>
+                <h1 className='font-semibold text-4xl text-center md:text-start'>Artwork</h1>
                 <p>Lorem ipsum dolor sit amet consectetur 
                     adipisicing elit. Tenetur, excepturi voluptatibus 
                     accusantium at natus minima!</p>

@@ -20,10 +20,10 @@ const Utama = () => {
             adipisicing elit. Repellat rerum nisi facere 
             odit autem perspiciatis quia, 
             aperiam iusto eveniet modi?</p>
-            <button className='bg-pink-500 px-3 py-2 w-max rounded-md font-semibold'>contact me</button>
+            {/* <button className='bg-pink-500 px-3 py-2 w-max rounded-md font-semibold'>contact me</button> */}
         </div>
         <div className='md:w-1/2 relative flex justify-center items-end'>
-          <img src={logo} alt="" className='lg:h-[90vh] h-96'/>
+          {/* <img src={logo} alt="" className='lg:h-[90vh] h-96'/> */}
           <img src={reactLogo} alt="" className='absolute w-10 top-36 left-0 rounded-full md:hidden' />
           <img src={reduxLogo} alt="" className='absolute w-10 top-0 right-5 md:hidden'/>
           <img src={tailwind} alt="" className='absolute w-10 rounded-full right-0 bottom-36 md:hidden'/>

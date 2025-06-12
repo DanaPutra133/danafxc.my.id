@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className='bg-gray-100 py-4 relative'>
-            <div className='container mx-auto px-4 text-center'>
-                <p>&copy; 2025 </p>
+        <footer className='py-4 relative' style={{ background: '#0C0C14', border: 'none' }}>
+            <div className='container mx-auto px-4 text-center '>
+                <p className="text-white">Dana x Aqua 🩷🩵</p>
             </div>
         </footer>
         )

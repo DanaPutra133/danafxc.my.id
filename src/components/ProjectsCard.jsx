@@ -1,22 +1,41 @@
 import React from 'react'
 
-const ProjectsCard = ({ title, description , image}) => {
+const ProjectsCard = ({ title, description, image, demoUrl, sourceUrl, demoLabel, sourceLabel }) => {
     return (
-        <div className="max-w-sm overflow-hidden bg-background/60 shadow-xl shadow-slate-800 rounded">
-            {
-                image && (
-                    <img src={image} alt={title} className='w-full h-42 object-cover rounded'/>
-                )
-            }
-            <div className='px-6 py-4 mt-2'>
-                <h3 className='px-4 text-xl md:text-2xl font-semibold leading-normal'>{title}</h3>
-                <p className='px-4 text-sm leading-tight py-2'>{description}</p>
-            </div>
-            <div className='p-2 md:p-4 flex gap-2 md:gap-4'>
-                <button className='md:mt-5 py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-80
-                duration-300 hover:scale-105 font-semibold rounded-3xl bg-pink-700'>Demo</button>
-                <button className='md:mt-5 py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-80
-                duration-300 hover:scale-105 font-semibold rounded-3xl bg-pink-700'>Source Code</button>
+        <div
+            className="max-w-sm overflow-hidden flex flex-col justify-between h-60" // lebih pendek dari sebelumnya
+            style={{ background: '#181824', minHeight: '15rem' }}
+        >
+            {image && (
+                <img src={image} alt={title} className='w-full h-28 object-cover rounded' />
+            )}
+            <div className='flex-1 flex flex-col justify-between'>
+                <div className='px-2 py-1 mt-1'>
+                    <h3 className='px-1 text-base md:text-lg font-semibold leading-normal text-white'>{title}</h3>
+                    <p className='px-1 text-xs leading-tight py-0.5 text-white'>{description}</p>
+                </div>
+                <div className='p-1 flex gap-1 mt-auto'>
+                    {demoUrl && (
+                        <a
+                            href={demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className='py-0.5 px-2 text-xs hover:opacity-80 duration-300 hover:scale-105 font-semibold rounded-3xl bg-pink-700 text-white'
+                        >
+                            {demoLabel || 'Demo'}
+                        </a>
+                    )}
+                    {sourceUrl && (
+                        <a
+                            href={sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className='py-0.5 px-2 text-xs hover:opacity-80 duration-300 hover:scale-105 font-semibold rounded-3xl bg-pink-700 text-white'
+                        >
+                            {sourceLabel || 'Source Code'}
+                        </a>
+                    )}
+                </div>
             </div>
         </div>
     )

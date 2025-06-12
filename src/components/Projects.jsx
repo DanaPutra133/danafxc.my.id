@@ -1,33 +1,51 @@
 import React from 'react'
 import ProjectsCard from './ProjectsCard'
-import cake from '../assets/Cake.png'
-import petibo from '../assets/Petibo.png'
-import learning from '../assets/learn.png'
+
+import project1 from '../assets/project1.png'
+import project2 from '../assets/project2.png'
+import project3 from '../assets/project3.png'
+import project4 from '../assets/project4.png'
 
 const Projects = () => {
     return (
-        <div id='project' className='p-10 md:p-24 border'>
-            <h1 className='text-2xl md:text-4xl font-bold'>Projects</h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6'>
-                <div className='py-12 px-14 flex flex-wrap gap-5'>
+        <div id='project' className='p-4 md:p-8' style={{ background: '#0C0C14' }}>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 p-0 justify-center mx-auto max-w-5xl'>
+                <div className='p-1 flex flex-wrap gap-1'>
                     <ProjectsCard 
-                    image={cake}
-                    title="Cake Bake"
-                    description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quibusdam."
+                        image={project1}
+                        title="REST API"
+                        description="Simple RestAPI, scraping web and CRUD untuk keperluan reminder kelas"
+                        demoUrl="https://api.danafxc.my.id" 
+                        demoLabel="Demo"
                     />
                 </div>
-                <div className='py-12 px-14 flex flex-wrap gap-5'>
+                <div className='p-1 flex flex-wrap gap-1'>
                     <ProjectsCard 
-                    image={petibo}
-                    title="Petibo"
-                    description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quibusdam."
+                        image={project2}
+                        title="AQUA BOT"
+                        description="Simple WhatsappBot base by BETABOTZ MD2 with Baileys API"
+                        sourceUrl="https://github.com/DanaPutra133/AQUABOT-V4"
+                        demoUrl="https://wa.me/6285814835844"   
+                        sourceLabel="Source"
+                        demoLabel="Demo"
                     />
                 </div>
-                <div className='py-12 px-14 flex flex-wrap gap-5'>
+                <div className='p-1 flex flex-wrap gap-1'>
                     <ProjectsCard 
-                    image={learning}
-                    title="Learning"
-                    description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quibusdam."
+                        image={project3}
+                        title="Betabotz MD2"
+                        description="Contributor Develop Powerful WhatsappBot with BETABOTZ API"
+                        sourceUrl="https://github.com/ERLANRAHMAT/BETABOTZ-MD2" 
+                        sourceLabel="Source"
+                    />
+                </div>
+                <div className='p-1 flex flex-wrap gap-1'>
+                    <ProjectsCard 
+                        image={project4}
+                        title="Betaboz Rest API"
+                        description="Contributor Front End for modern design website Rest API"
+                        demoUrl="https://api.betabotz.eu.org" 
+                        demoLabel="Demo"
                     />
                 </div>
             </div>

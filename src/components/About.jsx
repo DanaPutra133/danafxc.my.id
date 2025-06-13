@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../assets/img.png'
+import img from '../assets/img3.jpeg'
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 import pixiv from '../assets/pixiv.svg'

@@ -7,7 +7,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Artwork from './components/Artwork'
 import Resume from './components/Resume'
-import img from './assets/img.png' // import foto profil
+import img from './assets/img3.jpeg' // import foto profil
 
 const App = () => {
   const [showSplash, setShowSplash] = useState(true)

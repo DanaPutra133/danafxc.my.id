@@ -13,8 +13,9 @@ import img11 from '../assets/artwork11.jpg'
 import img12 from '../assets/artwork12.jpg'
 import img13 from '../assets/artwork13.jpg'
 import img14 from '../assets/artwork14.jpg'
+import img15 from '../assets/artwork15.jpg'
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14];
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15];
 
 const Artwork = () => {
     const [openIdx, setOpenIdx] = useState(null);

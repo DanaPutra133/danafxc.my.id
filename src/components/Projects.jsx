@@ -16,7 +16,7 @@ const Projects = () => {
                         title="REST API"
                         description="Simple RestAPI, scraping web and CRUD untuk keperluan reminder kelas"
                         demoUrl="https://api.danafxc.my.id" 
-                        demoLabel="Demo"
+                        demoLabel="Visit"
                     />
                 </div>
                 <div className='p-1 flex flex-wrap gap-1'>
@@ -45,7 +45,7 @@ const Projects = () => {
                         title="Betaboz Rest API"
                         description="Contributor Front End for modern design website Rest API"
                         demoUrl="https://api.betabotz.eu.org" 
-                        demoLabel="Demo"
+                        demoLabel="Visit"
                     />
                 </div>
             </div>

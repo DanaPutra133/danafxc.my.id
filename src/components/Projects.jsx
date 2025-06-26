@@ -5,6 +5,7 @@ import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import project4 from '../assets/project4.png'
+import project5 from '../assets/project5.png'
 
 const Projects = () => {
     return (
@@ -45,6 +46,15 @@ const Projects = () => {
                         title="Betaboz Rest API"
                         description="Contributor Front End for modern design website Rest API"
                         demoUrl="https://api.betabotz.eu.org" 
+                        demoLabel="Visit"
+                    />
+                </div>
+                <div className='p-1 flex flex-wrap gap-1'>
+                    <ProjectsCard 
+                        image={project5}
+                        title="Aqukin Tutorials"
+                        description="Website for tutorials and documentation about web, bot, and more"
+                        demoUrl="https://tutor.danafxc.my.id" 
                         demoLabel="Visit"
                     />
                 </div>

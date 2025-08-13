@@ -6,6 +6,7 @@ import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import project4 from '../assets/project4.png'
 import project5 from '../assets/project5.png'
+import project6 from '../assets/project6.png'
 
 const Projects = () => {
     return (
@@ -56,6 +57,17 @@ const Projects = () => {
                         description="Website for tutorials and documentation about web, bot, and more"
                         demoUrl="https://tutor.danafxc.my.id" 
                         demoLabel="Visit"
+                    />
+                </div>
+                <div className='p-1 flex flex-wrap gap-1'>
+                    <ProjectsCard 
+                        image={project6}
+                        title="Discord Bot"
+                        description="Bot Discord yang kayak akan fitur untuk server discord kamu"
+                        demoUrl="https://api.danafxc.my.id/aquabot" 
+                        demoLabel="Visit"
+                        sourceUrl="https://github.com/DanaPutra133/AQUABOT_DC-V1"
+                        sourceLabel="Source"
                     />
                 </div>
             </div>
